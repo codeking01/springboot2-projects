@@ -6,5 +6,34 @@
 </head>
 <body>
 我是首页！
+<br>
+
+<form action="/user" method="get">
+    <input value="REST-GET 提交" type="submit">
+</form>
+
+<form action="/user" method="post">
+    <input value="REST-POST 提交" type="submit">
+</form>
+
+<form action="/user" method="post">
+    <input name="_method" type="hidden" value="delete">
+    <input value="REST-DELETE 提交" type="submit">
+</form>
+
+<form action="/user" method="post">method必须为POST,才可以被SpringBoot识别
+    <input name="_method" value="put" type="hidden">
+    <input value="REST-PUT 提交" type="submit">
+</form>
+
+<form action="/user" method="post">
+    <input name="_myMethod" value="put" type="hidden">
+    <input value="自定义name REST-PUT 提交" type="submit">
+</form>
+
+<form action="/user" method="post">
+    <input name="" value="put" type="hidden">
+    <input value=" 隐藏域的name什么都没写 REST-PUT 提交" type="submit">
+</form>
 </body>
 </html>

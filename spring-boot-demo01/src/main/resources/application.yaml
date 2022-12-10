@@ -1,8 +1,26 @@
+# 默认无前缀 配置静态资源前缀，方便过滤器过滤掉静态资源 访问到当前项目/res/** 是静态资源
+# 但是会导致 Favicon 功能失效 已经首页失效
+#spring:
+#  mvc:
+#    static-path-pattern: /res/**
+#    #     修改静态资源路径
+#    resources:
+#      static-locations: [ classpath:/自定义静态资源路径/]
+
+# 开启这个以后，表单里面的put,delete才可以使用 通过添加 隐藏域来表示我们的请求方式，其中name必须为_method（我们也可以后期修改）而value即为我们想要的操作
+spring:
+  mvc:
+    hidden-method:
+      filter:
+        enabled: true
+
+
+
 # yaml表示以上对象
 person:
   userName: "codeking \n hello"
   boss: false
-  birth: 2019/12/12 20:12:33
+  birth: 2022/12/10 20:12:33
   age: 18
   pet:
     name: tomcat

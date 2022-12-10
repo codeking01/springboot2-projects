@@ -9,7 +9,7 @@ public class SpringBootDemo01Application {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext run = SpringApplication.run(SpringBootDemo01Application.class, args);
-        Object person = run.getBean("person");
-        System.out.println("person:" + person);
+        //Object person = run.getBean("person");
+        //System.out.println("person:" + person);
     }
 }
