@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 public class UserController {
+
     @RequestMapping(value = "/user", method = RequestMethod.PUT)
     public String putUser() {
         return "putUser";
