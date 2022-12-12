@@ -1,6 +1,7 @@
 package com.codeking.boot.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
@@ -13,10 +14,18 @@ import java.util.Map;
  */
 @Controller
 public class TestParamsController {
-    //@GetMapping("/test")
-    //public String testPage() {
-    //    return "/test.html";
-    //}
+    @GetMapping("/test")
+    public String testPage(Model model) {
+        model.addAttribute("msg","thymeleaf测试！！");
+        return "testAllParams";
+    }
+
+    @GetMapping("/success")
+    public String toSuccess(Model model) {
+        model.addAttribute("msg","toSuccess");
+        return "success";
+    }
+
 
     @GetMapping("/car/{id}/owner/{username}")
     @ResponseBody

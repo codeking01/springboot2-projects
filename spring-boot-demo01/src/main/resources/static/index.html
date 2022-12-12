@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
@@ -10,6 +10,9 @@
 <form action="/test">
     <input type="submit" value="跳转参数测试页面··">
 </form>
+<br>
+<a href="/success" th:href="@{/success}">跳转页面</a>
+<br>
 <br>
 
 <form action="/user" method="get">
