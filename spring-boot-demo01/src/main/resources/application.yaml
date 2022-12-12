@@ -13,6 +13,8 @@ spring:
     hidden-method:
       filter:
         enabled: true
+    contentnegotiation:
+      favor-parameter: true  #开启请求参数内容协商模式（这个是兼容xml和json，如果需要其他的格式，还需要手动配置其他的）
 
 
 
