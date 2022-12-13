@@ -48,7 +48,7 @@ public class IndexController {
     @GetMapping("/logout")
     public String logout(HttpSession session, Model model) {
         session.removeAttribute("loginUser");
-        model.addAttribute("msg", "请重新登录！");
+        model.addAttribute("msg", "已注销，请重新登录！");
         return "login";
     }
 }
