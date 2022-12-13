@@ -21,6 +21,8 @@ public class FormController {
 
     @GetMapping("/form_layouts")
     public String form_layouts(){
+        // 故意抛出一个错误
+        int i=1/0;
         return "/form/form_layouts";
     }
     @PostMapping("/upload")
