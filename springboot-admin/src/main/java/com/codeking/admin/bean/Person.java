@@ -6,17 +6,23 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author : codeking
- * @create : 2022/12/12 23:06
+ * @create : 2022/12/15 21:50
  */
+
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class Person {
     private Integer id;
     private String userName;
     private String password;
 
-    public User(String userName, String password) {
+    public Person(Integer id, String userName, String password) {
+        this.id = id;
+        this.userName = userName;
+        this.password = password;
+    }
+
+    public Person(String userName, String password) {
         this.userName = userName;
         this.password = password;
     }

@@ -35,3 +35,8 @@ spring:
   jdbc:
     template:
       query-timeout: 3
+
+# 配置mybatis规则
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml  #全局配置文件位置
+  mapper-locations: classpath:mapper/*.xml  #sql映射文件位置,这个地方需要注意，mapper文件和上面java下面的mapper必须要同名，否则找不到

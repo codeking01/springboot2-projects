@@ -82,6 +82,13 @@
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.17</version>
         </dependency>
+
+        <!-- 引入mybatis   -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.4</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -101,6 +108,20 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
+        <!-- 添加资源 -->
+        <!-- <resources> -->
+        <!--     <resource> -->
+        <!--         <directory>src/main/resources</directory> -->
+        <!--         &lt;!&ndash; src/main/resources下的指定资源放行 &ndash;&gt; -->
+        <!--         <includes> -->
+        <!--             <include>**/*.properties</include> -->
+        <!--             <include>**/*.yml</include> -->
+        <!--             <include>**/*.xml</include> -->
+        <!--         </includes> -->
+        <!--         <filtering>false</filtering> -->
+        <!--     </resource> -->
+        <!-- </resources> -->
     </build>
 
 </project>
