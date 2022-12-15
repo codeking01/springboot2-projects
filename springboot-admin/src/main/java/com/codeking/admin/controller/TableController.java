@@ -27,7 +27,7 @@ public class TableController  {
                 new User("hehe ", "aaddd"));
         model.addAttribute("users",users);
 
-        if(users.size()>3){
+        if(users.size()>5){
             throw new UserTooManyException();//抛出自定义异常
         }
         return "table/dynamic_table";

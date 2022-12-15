@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
  * @author : codeking
  * @create : 2022/12/15 17:51
  */
-@Service
 public interface UserService {
     User getUserService(Integer id);
 
