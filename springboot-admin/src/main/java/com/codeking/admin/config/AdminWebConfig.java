@@ -51,6 +51,6 @@ public class AdminWebConfig implements WebMvcConfigurer {
         // 注册拦截器 拦截器会拦截所有，需要配置不拦截的静态资源
         registry.addInterceptor(new LoginInterceptor())
                 .addPathPatterns("/**") //全部拦截，然后在底下放行部分请求
-                .excludePathPatterns("/css/**", "/fonts/**", "/images/**", "/js/**", "/", "/table/**", "/form/**", "/login", "/logout","/savaPerson");
+                .excludePathPatterns("/css/**", "/fonts/**", "/images/**", "/js/**", "/", "/table/**", "/form/**", "/login", "/logout","/savaPerson","/redisTest");
     }
 }
